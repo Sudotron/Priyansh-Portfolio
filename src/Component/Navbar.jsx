@@ -16,6 +16,7 @@ export default function Navbar() {
             {links.map(([id, label]) => (
               <li className="nav-item" key={id}><a className="nav-link" href={`#${id}`}>{label}</a></li>
             ))}
+            <li className="nav-item d-none d-md-block"><a className="nav-link" href={profile.swarm}>Swarm build</a></li>
             <li className="nav-item ms-lg-2"><a className="btn btn-outline-primary btn-sm px-3" href={profile.cv} target="_blank" rel="noreferrer" download>Download CV</a></li>
           </ul>
         </div>

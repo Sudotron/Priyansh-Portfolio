@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Priyansh Saini | Watch this portfolio get built</title>
+    <meta name="description" content="Priyansh Saini's portfolio, built live by a swarm of cursors as you scroll." />
+    <link rel="icon" href="../img/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/index-BcWSe1v5.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DaDOAYTB.css">
+    <style>
+      .pf-bar{position:fixed;right:16px;bottom:16px;z-index:100;display:flex;gap:6px;padding:6px;background:#121417;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.25);font:500 13px/1 Inter,system-ui,sans-serif}
+      .pf-bar a{color:#fff;text-decoration:none;padding:9px 12px;border-radius:8px}
+      .pf-bar a:hover{background:#2a2e35}
+      .pf-bar a.pf-main{background:#4C5BD4}
+      .pf-hint{position:fixed;left:50%;top:calc(50% + 70px);transform:translateX(-50%);z-index:5;font:500 14px/1 Inter,system-ui,sans-serif;color:#62666D;pointer-events:none;transition:opacity .35s ease}
+      .pf-hint.gone{opacity:0}
+      @media (max-width:640px){.pf-bar a:not(.pf-main){display:none}}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div class="pf-hint" id="pf-hint">Scroll to start the build</div>
+    <nav class="pf-bar" aria-label="Quick links">
+      <a class="pf-main" href="../">Classic view</a>
+      <a href="../files/Priyansh_Saini_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+      <a href="https://github.com/Sudotron" target="_blank" rel="noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/priyansh-saini-061a63250" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="mailto:sainipriyansh989@gmail.com">Email</a>
+    </nav>
+    <script>
+      var t = setInterval(function () {
+        if (window.swarm && window.swarm.started) {
+          document.getElementById('pf-hint').className = 'pf-hint gone';
+          clearInterval(t);
+        }
+      }, 200);
+    </script>
+  </body>
+</html>

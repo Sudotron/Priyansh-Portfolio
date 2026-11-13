@@ -15,6 +15,7 @@ export default function Home() {
               <a className="btn btn-primary btn-lg px-4" href="#contact">Contact Me</a>
               <a className="btn btn-outline-light btn-lg px-4" href="#projects">View Projects</a>
               <a className="btn btn-outline-light btn-lg px-4" href={profile.cv} target="_blank" rel="noreferrer" download>Download CV</a>
+              <a className="btn btn-outline-light btn-lg px-4 d-none d-md-inline-block" href={profile.swarm}><i className="fas fa-bezier-curve me-2"></i>Watch it get built</a>
             </div>
             <div className="d-flex gap-3 mt-4 hero-social">
               <a href={profile.github} target="_blank" rel="noreferrer" aria-label="GitHub"><i className="fab fa-github"></i></a>

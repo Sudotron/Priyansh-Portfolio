@@ -13,6 +13,7 @@ export const profile = {
   github: 'https://github.com/Sudotron',
   linkedin: 'https://www.linkedin.com/in/priyansh-saini-061a63250',
   cv: `${PUBLIC}/files/Priyansh_Saini_Resume.pdf`,
+  swarm: `${PUBLIC}/swarm/index.html`,
 };
 
 export const services = [

@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default function About() {
-  const stats = [['3', 'Backend projects built'], ['100+', 'Active players data on the tracking engine'], ['2028', 'B.Tech graduation'], ['Asyncio', 'Core specialty']];
+  const stats = [['3', 'Backend projects built'], ['100+', 'Active users on the tracking engine'], ['2028', 'B.Tech graduation'], ['Asyncio', 'Core specialty']];
   return (
     <section className="section alt" id="about">
       <div className="container">
